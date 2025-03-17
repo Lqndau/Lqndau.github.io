@@ -554,6 +554,10 @@ i{
     .video-container video,
     .about-content-container-video {
         width: 100%;
+	    max-width:700px;
+    }
+	.about-content-container-video {
+        width: 90%;
     }
 }
 .nav-active .dropdown-content {
@@ -589,6 +593,7 @@ i{
     display: flex;
     flex-direction: row; /* Side by side layout */
     align-items: center;
+	justify-content: center;
     gap: 2rem; /* Space between video and text */
     max-width: 1200px;
     margin: 0 auto;
@@ -596,11 +601,12 @@ i{
 }
 
 .video-container video {
-    width: 50%; /* Make video take half the width */
-    max-width: 600px;
+    width: 80%; /* Make video take half the width */
+    max-width: 1000px;
+	height:auto;
 }
 
 .about-content-container-video {
-    width: 50%;
+    width: 65%;
     font-size: 1.5rem;
 }

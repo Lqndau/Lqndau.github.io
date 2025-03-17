@@ -47,7 +47,7 @@ h3 {
     font-family: var(--headers-font);
 }
 .no-transform {
-    transform: none !important;
+    transform: none;
 }
 .line {
     border-radius: 2rem;
@@ -458,6 +458,7 @@ i{
     .social-media{
         padding: 0;
     }
+}
 .footer {
   position: fixed;
   left: 0;

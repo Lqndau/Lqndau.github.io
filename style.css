@@ -585,3 +585,22 @@ i{
       color: #333;
       font-family: 'Roboto', sans-serif;
     }
+.video-container {
+    display: flex;
+    flex-direction: row; /* Side by side layout */
+    align-items: center;
+    gap: 2rem; /* Space between video and text */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.video-container video {
+    width: 50%; /* Make video take half the width */
+    max-width: 600px;
+}
+
+.about-content-container-video {
+    width: 50%;
+    font-size: 1.5rem;
+}

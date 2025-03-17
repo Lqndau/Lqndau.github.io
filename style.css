@@ -513,7 +513,7 @@ i{
         justify-content: center;
 	align-items: center;
     }
-.desktop-only {
+	.desktop-only {
         display: none;
     }
 

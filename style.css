@@ -122,6 +122,12 @@ nav {
 	position: relative;
 	
 }
+.desktop-only {
+    display: block;
+}
+.mobile-only {
+    display: none;
+}
 .burger-container .line {
     width: 30px;
     height: 3px;
@@ -507,7 +513,13 @@ i{
         justify-content: center;
 	align-items: center;
     }
+.desktop-only {
+        display: none;
+    }
 
+    .mobile-only {
+        display: block;
+    }
     .nav-links {
         display: flex;
         flex-direction: column;

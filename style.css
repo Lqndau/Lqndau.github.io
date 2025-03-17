@@ -282,30 +282,7 @@ nav {
         line-height: 2;
     }
 }
-@media (max-width: 900px) {
-    nav {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        background: var(--prva-boja);
-        transform: translateY(-120%);
-        transition: all 0.3s ease-in-out;
-        text-align: center;
-    }
 
-    .nav-links {
-        padding: 2rem 0;
-        flex-direction: column;
-    }
-
-    .nav-active {
-        transform: translateY(0);
-    }
-	.burger-container {
-        display: flex;
-    }
-}
 
 #projects {
     color: var(--fancy-boja);
@@ -514,4 +491,28 @@ i{
 .dropdown a:hover {background-color: #FAAC28;}
 
 .show {display: block;}
+@media (max-width: 900px) {
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--prva-boja);
+        transform: translateY(-120%);
+        transition: all 0.3s ease-in-out;
+        text-align: center;
+    }
+
+    .nav-links {
+        padding: 2rem 0;
+        flex-direction: column;
+    }
+
+    .nav-active {
+        transform: translateY(0);
+    }
+	.burger-container {
+        display: flex;
+    }
 }
+

@@ -220,9 +220,6 @@ nav {
     .nav-link-item:hover {
         opacity: 1;
     }
-    .burger-container {
-        display: flex;
-    }
 }
 
 .about-container {
@@ -305,6 +302,9 @@ nav {
 
     .nav-active {
         transform: translateY(0);
+    }
+	.burger-container {
+        display: flex;
     }
 }
 

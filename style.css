@@ -518,7 +518,7 @@ i{
     }
 
     .mobile-only {
-        display: block;
+        display: flex;
     }
     .nav-links {
         display: flex;

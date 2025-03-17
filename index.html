@@ -33,6 +33,17 @@ window.onclick = function(event) {
   }
 }
 </script>
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+    const burger = document.querySelector(".burger-container");
+    const nav = document.querySelector("#nav");
+
+    burger.addEventListener("click", function () {
+        nav.classList.toggle("nav-active");
+        burger.classList.toggle("burger-active");
+    });
+});
+</script>
 		</div>
         <header class="fixed-top" id="navbar">
             <div class="logo-container">

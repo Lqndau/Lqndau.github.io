@@ -110,6 +110,9 @@ nav {
 .nav-link-item + .nav-link-item {
     margin-top: 1em;
 }
+.nav-active {
+    transform: translateY(0);
+}
 .burger-container {
     display: flex;
     flex-direction: column;
@@ -199,7 +202,7 @@ nav {
         opacity: 1;
     }
     .burger-container {
-        display: none;
+        display: flex;
     }
 }
 

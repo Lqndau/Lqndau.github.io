@@ -119,6 +119,25 @@ nav {
     align-items: flex-end;
     z-index: var(--prvi-sloj);
     cursor: pointer;
+	gap: 5px;
+	
+}
+.burger-container .line {
+    width: 30px;
+    height: 3px;
+    background-color: var(--druga-boja);
+    transition: all 0.3s;
+}
+.burger-active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.burger-active .line:nth-child(2) {
+    opacity: 0;
+}
+
+.burger-active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
 }
 
 #welcome-section {
@@ -265,6 +284,27 @@ nav {
     .about-content-container {
         transform: translate(-100px, 0);
         line-height: 2;
+    }
+}
+@media (max-width: 900px) {
+    nav {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: var(--prva-boja);
+        transform: translateY(-120%);
+        transition: all 0.3s ease-in-out;
+        text-align: center;
+    }
+
+    .nav-links {
+        padding: 2rem 0;
+        flex-direction: column;
+    }
+
+    .nav-active {
+        transform: translateY(0);
     }
 }
 

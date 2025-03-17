@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Stranica</title>
+  <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>freeCodeCamp || portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a7efe1a2c2.js" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<main>
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+		</div>
+        <header class="fixed-top" id="navbar">
+            <div class="logo-container">
+                <h2 class="logo"><a href="#">BINDI</a></h2>
+            </div>
+
+            <nav id="nav">
+                <ul class="nav-links">
+                    <li class="nav-link-item"><a href="#">Početna</a></li>
+                    <li class="nav-link-item"><a href="#about">O nama</a></li>
+                    <li class="nav-link-item"><a href="#contact">NARUČI!</a></li>
+					<li class="nav-link-item">
+					<div class="dropdown">
+					<a href="#projects"><button onmouseover="myFunction()" class="dropbtn">KAMPANJE</button></a>
+					<div id="myDropdown" class="dropdown-content">
+					<a href="dizajn.html" target="blank_">Glasanje dizajna</a>
+					<a href="okusi.html" target="blank_">Glasanje okusa</a>
+					<a href="redizajn.html" target="blank_">Natječaj dizajna</a>
+					</div>
+					</div>
+                </ul>
+            </nav>
+            <div class="burger-container">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+        </header>
+
+        <section id="welcome-section">
+            <div class="intro-container">
+                <h1 class="intro-title">
+                    <span class="greeting">dobrodošli na stranicu energetskog pića bindi</span> Ja sam Lean, CEO bindi-a
+                </h1>
+                <div class="options-container">
+                    <a href="#about" class="btn more-btn">Vidi više</a>
+                    <a href="#contact" class="btn contact-btn">Naruči ovdje!</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="about-container">
+                <div class="about-img">
+                    <img src="pice.png" alt="pice">
+                </div>
+                <div class="about-content-container">
+                    <span class="hi">Što je bindi?</span>
+                    <p class="presentation">
+                        Energetsko piće <span class="bindi">BINDI</span> pruža trenutni energetski podsticaj zahvaljujući kombinaciji ugljenih hidrata i prirodnih stimulansa poput kofeina i guarane. Osim toga, proteini u <span class="bindi">BINDI-u</span> pomažu u izgradnji mišića i oporavku nakon treninga. Zahvaljujući vitaminima B kompleksa i taurinu, BINDI podržava mentalnu budnost i koncentraciju. Ovo praktično piće je idealno za svakoga ko želi brzo nadoknaditi energiju i održati vrhunske performanse.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="section-title">
+                <h2>
+                    Kampanje
+                </h2>
+            </div>
+            <div class="projects-container project-tile">
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="pice2.png" alt="project-img">
+                    </div>
+                    <div class="project-info">
+                        <p class="project-title">
+                            Mogući redizajn
+                        </p>
+                        <p class="project-description">
+                            Mislite li da je našem brendu potreban redizajn ili vam se sviđa ovaj? Glasajte klikom na "saznajte više"!
+                        </p>
+                        <p class="project-link">
+                            <a href="dizajn.html" target="_blank">saznajte više</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="puno_pica.png" alt="project-img">                    </div>
+                    <div class="project-info">
+                        <p class="project-title">
+                            Mnoštvo okusa
+                        </p>
+                        <p class="project-description">
+                            Čujemo Vas! Vaše omiljeno energetsko piće dobiva nove okuse i <span class="bindi">VI</span> ih možete odabrati klikom dolje!
+                        </p>
+                        <p class="project-link">
+                            <a href="okusi.html" target="_blank">saznajte više</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="project-item">
+                    <div class="project-img">
+                        <img src="pice3.png" alt="project-img">                    </div>
+                    <div class="project-info">
+                        <p class="project-title">
+                            Natječaj za novi dizajn
+                        </p>
+                        <p class="project-description">
+                            Mislite li da imate ono što je potrebno da kreirate naš novi dizajn? Iskusite sreću i pošaljite nam ideje!
+                        </p>
+                        <p class="project-link">
+                            <a href="redizajn.html" target="_blank">saznajte više</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="section-title">
+                <h2>Naruči ovdje</h2>
+            </div>
+            <form method="post" action="php.php" class="contact-form">
+                <p class="form-title">KONTAKTNI LIST</p>
+                <input class="inputs" type="text" name="ime" placeholder="Vaše ime" required>
+                <input class="inputs" type="email" name="email" placeholder="Vaš e-mail" required>
+                <textarea name="poruka" rows="10" placeholder="Unesite vaš upit"></textarea>
+                <input type="submit" name="submit" value="Pošalji!">
+            </form>
+        </section>
+
+        <footer>
+            <ul>
+                <li><a href="#about">O nama</a></li>
+                <li><a href="#projects">Projekti</a></li>
+                <li><a href="#contact">Kontakt</a></li>
+            </ul>
+
+            <div class="social-media">
+                <a target="_blank" href="https://www.instagram.com" class="instagram" id="profile-link">
+                    <i class="fab fa-instagram"></i>
+                    Instagram
+                </a>
+                <a target="_blank" href="https://www.facebook.com" class="facebook">
+                    <i class="fab fa-facebook"></i>
+                    Facebook
+                </a>
+                <a target="_blank" href="https://www.twitter.com" class="twitter">
+                    <i class="fab fa-twitter"></i>
+                    Twitter
+                </a>
+            </div>
+        </footer>
+    </main>
+
+</body>
+</html>

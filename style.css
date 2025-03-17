@@ -184,7 +184,7 @@ nav {
     border: 2px solid var(--druga-boja);
 }
 
-@media only screen and(min-width: 800px) {
+@media only screen and (min-width: 800px) {
     .greeting {
         font-size: 4.5rem;
     }
